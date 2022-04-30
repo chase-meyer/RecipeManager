@@ -8,6 +8,8 @@ import org.springframework.data.mongodb.repository.Query;
 
 public interface RecipeRepository extends MongoRepository<Recipe, String> {
 
+    List<Recipe> findByNameContaining(String name);
+
     @Query("{name:'?0'}")
     Recipe findRecipeByName(String name);
 

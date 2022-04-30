@@ -9,9 +9,31 @@ public class Recipe {
     private String id; // randomly generated or hashed on url
 
     private String name;
+    private String description;
     private String category;
     private String[] ingredients;
     private String instructions;
+
+    public Recipe() {
+
+    }
+
+    public Recipe(String name) {
+        this.name = name;
+    }
+
+    public Recipe(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
+
+    public Recipe(String name, String description, String category, String[] ingredients, String instructions) {
+        this.name = name;
+        this.description = description;
+        this.category = category;
+        this.ingredients = ingredients;
+        this.instructions = instructions;
+    }
 
     public String getId() {
         return this.id;
@@ -19,6 +41,14 @@ public class Recipe {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getCategory() {
