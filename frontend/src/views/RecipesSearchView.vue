@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import RecipeDetails from "@/components/RecipeDetails.vue";
+import ListRecipes from "@/components/ListRecipes.vue";
 </script>
 
 <template>
   <main>
     <div class="container">
-      <RecipeDetails />
+      <ListRecipes />
     </div>
   </main>
 </template>

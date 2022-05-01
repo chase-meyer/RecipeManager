@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/api")
 public class RecipeController {
@@ -59,7 +59,7 @@ public class RecipeController {
     public ResponseEntity<Recipe> createRecipe(@RequestBody Recipe recipe) {
         try {
             Recipe _recipe = recipeRepository
-                    .save(new Recipe(recipe.getName()));
+                    .save(new Recipe(recipe.getName(), recipe.getDescription()));
             return new ResponseEntity<>(_recipe, HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
