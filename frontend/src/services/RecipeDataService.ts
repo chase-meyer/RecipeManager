@@ -19,7 +19,7 @@ class RecipeDataService {
     deleteAll(): Promise<any> {
         return http.delete(`/recipes`);
     }
-    findByName(name: string): Promise<any> {
+    findByNameContaining(name: string): Promise<any> {
         return http.get(`/recipes?name=${name}`);
     }
 }

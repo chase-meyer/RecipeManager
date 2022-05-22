@@ -11,8 +11,7 @@
         <button
           class="button-primary"
           @click="searchName"
-          type="submit"
-          value="Submit"
+          type="button"
         >
           Submit
         </button>
@@ -99,10 +98,9 @@ export default defineComponent({
         });
     },
     searchName() {
-      RecipeDataService.findByName(this.name)
+      RecipeDataService.findByNameContaining(this.name)
         .then((response: ResponseData) => {
           this.recipes = response.data;
-          this.setActiveRecipe({} as Recipe);
           console.log(response.data);
         })
         .catch((e: Error) => {
