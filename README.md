@@ -130,6 +130,7 @@ I like cooking and this is a side project I've created to help manage and track 
 - [x] CRUD 
 - [ ] User Authentication
 - [ ] Barcode scanner for Ingredients
+- [ ] Update README 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,9 +139,10 @@ I like cooking and this is a side project I've created to help manage and track 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+This is a list resources I found that have helped me with the project.
 
 * [BezKoder](https://www.bezkoder.com/category/spring/)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
